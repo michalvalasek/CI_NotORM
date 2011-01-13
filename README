@@ -1,0 +1,18 @@
+This is a wrapper for NotORM library by Jakub Vrana - http://www.notorm.com/
+
+Installation:
+1. Add the file CI_NotORM.php to your /application/libraries folder
+2. Add folder NotORM with all its files to your /application/libraries folder
+   OR
+   Copy folder NotORM from package downloaded from http://www.notorm.com/ into your /application/libraries folder and and move NotORM.php into it (don't forget to edit include paths in the file)
+3. Set your database credentials in application/config/database.php
+
+You can autoload the library or include it in one of your controllers at run time. 
+
+		e.g. $this->load->library('ci_notorm');
+
+Then use it in your controllers or models via $this->notorm.
+
+		e.g.	echo $this->notorm->products[1]['name'];
+		
+See the full documentation at http://www.notorm.com/
